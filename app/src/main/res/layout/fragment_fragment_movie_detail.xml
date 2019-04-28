@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.FragmentMovieDetail"
+    android:background="#000">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/poster_movie"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+        <TextView
+            android:id="@+id/movie_name_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="#ff1aff"
+            android:layout_below="@+id/poster_movie"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview"
+            android:textStyle="bold"
+            android:textColor="#fff"
+
+            android:layout_below="@+id/movie_name_details"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/overview_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/overview"
+            android:text="kuch be"
+            android:textColor="#aa00ff"
+            android:textSize="17sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
